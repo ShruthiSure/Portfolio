@@ -1,0 +1,1 @@
+Demonstrated a responsive portfolio website ensuring seamless user experience across various devices and screen sizes.Integrated interactive elements such as navigation menus, image galleries, and contact forms using JavaScript to enhance user engagement and Functionality
