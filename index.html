@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6377b6f39f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>S Shruthi</span><br>From Bangalore, India</h1>
+            
+
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi there! I'm a recent graduate with a strong passion for coding and a thirst for challenges. I specialize in Java, SQL and Web Technologies like HTML, CSS, and JavaScript. My passion lies in creating innovative solutions for real-world challenges. Eager to contribute my enthusiasm and fresh perspective to an innovative organization that values creativity and fosters growth. Determined to deliver high-quality software solutions that exceed expectations. Let's connect and create transformative solutions with a positive impact.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Internships</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>BackEnd Technology</span><br>Java, Advance Java, Data Structure and Algorithm</li>
+                        <li><span>FrontEnd Technology</span><br>HTML5, CSS3, JavaScript, React JS</li>
+                        <li><span>DataBase</span><br>SQL, MySql</li>
+                        <li><span>Soft Skills</span><br>Communication, Logical Thinking, Problem Solving, Collaborative</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Full Stack Developer Intern</span><br>June 2023-Jan 2024<br>KodNest Technologies Pvt Ltd, Bengaluru</li>
+                        <li><span>Java and SQL Intern</span><br>Qspiders, Bengaluru</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Engineering</span><br>2019-2023<br>Visvesvaraya Technological University Belagavi<br>Karnataka<br>Electronics and Communication Engineering</li>
+                        <li><span>Pre-University College</span><br>2017-2019<br>Diamond PU Science College<br>Karnataka</li>
+                        <li><span>SSLC</span><br>2017<br>Karnataka State Board</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-music"></i>
+                <h2>HarmoniQ</h2>
+                <p>HarmoniQ stands as a vibrant and dynamic Full Stack Web Application, skillfully crafted with the robust combination of Spring Boot and Hibernate. This music streaming platform not only provides a seamless musical journey for users but also strategically integrates the Razer Pay API, elevating the experience for both Agents and Customers.</p>
+                <a href="https://github.com/ShruthiSure/HarmoniQ.git">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-database"></i>
+                <h2>Cyber Cafe Management System</h2>
+                <p>A Java Desktop Application to streamline cyber cafe operations, include computer management, customer billing, Web Browsing, and time tracking. An innovative internet connectivity solution, reducing billing errors and boosting overall operational efficiency through accessible, reliable, secure, and cost-effective connectivity options.
+                    </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Responsive Portfolio Website</h2>
+                <p>Demonstrated proficiency in developing a responsive portfolio website using HTML, CSS, and JavaScript, ensuring seamless user experience across various devices and screen sizes. Successfully integrated interactive elements such as navigation menus, image galleries, and contact forms using JavaScript to enhance user engagement and functionality of the portfolio.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This app connects you to enjoy an immersive music playback experience across diverse genres and artists.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>CyberHub Manager</h3>
+                    <p>It is a real-time way to manage the client machines via monitoring and locking in order to process PC rentals which includes the ability to fully control and charge for printing.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>This portfolio describes my academic and professional materials that exemplifies my skills, qualifications, education, training, and experiences.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>shruthisure4@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8431233395</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/s-shruthi-478385266/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/ShruthiSure" target="_blank"> <i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.instagram.com/_.shruthiii.__?utm_source=qr&igsh=MXUxeHlhcjhycTh1bQ==" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © S Shruthi.<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyLZhyjFwwfEW2GBxd1Qjnn5IjjHbxgoZ89S4RyNlwb-6FBXKgrqRTT5W0t9_YWNtN8/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
